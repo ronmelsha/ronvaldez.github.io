@@ -1,0 +1,424 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .main, .footer {
+    width: 100%;
+}
+
+.main_photo {
+    z-index: -1000;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+}
+
+.intro {
+    height: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.intro .job_title, .intro_desc, h1 {
+    margin-bottom: 20px;
+}
+
+.nav {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: block;
+    line-height: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(133, 102, 4);
+}
+
+
+.intro_btn {
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+
+.intro_btn_yellow {
+    background-color: #fdc435;
+    color: black;
+    border-radius: 20px;
+}
+
+.intro_btn_light {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.intro_btn_yellow:hover {
+    background-color: black;
+    color: white;
+}
+
+.intro_btn_light:hover {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+    border-radius: 20px 20px 0 0;
+    padding: 30px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.card_button {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.card_button:hover {
+    background-color: black;
+    color: white;
+}
+
+.card_image {
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card_left h3, p, a {
+    margin-bottom: 20px;
+}
+
+.card_image {
+    width: 100%;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 280px) {
+    .intro {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main_photo {
+        width: 70%;
+    }
+    .nav ul {
+        margin-left: -30px;
+    }
+}
+
+@media only screen and (min-width: 281px) {
+    .intro {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main_photo {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 367px) {
+    .intro {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main_photo {
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (min-width: 413px) {
+    .intro {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .main_photo {
+        width: 60%;
+    }
+    .nav {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 466px) {
+    .intro {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .nav {
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (min-width: 538px) {
+    .intro {
+        width: 100%;
+        margin-top: 120px;
+    }
+    .nav {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .intro {
+        width: 100%;
+        margin-top: 150px;
+    }
+    .nav {
+        font-size: 30px;
+    }
+    .nav ul li {
+        line-height: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 720px) {
+    .intro {
+        width: 100%;
+        margin-top: 200px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .intro {
+        width: 50%;
+        margin-top: 270px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .nav {
+        float: right;
+        margin-right: 100px;
+        font-size: 30px;
+        top: -18px;
+        position: relative;
+    }
+    .nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    .main {
+        margin-top: -130px;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .intro {
+        width: 45%;
+        margin-top: 270px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main {
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (min-width: 921px) {
+    .intro {
+        width: 45%;
+        margin-top: 270px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main {
+        margin-top: -80px;
+    }
+}
+
+@media only screen and (min-width: 964px) {
+    .intro {
+        width: 45%;
+        margin-top: 270px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main {
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    .intro {
+        width: 45%;
+        margin-top: 270px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main {
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .intro {
+        width: 45%;
+        margin-top: 270px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main {
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    .intro {
+        width: 45%;
+        margin-top: 300px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+1
+    }
+    .card {
+        width: 70%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .intro {
+        width: 47%;
+        margin-top: 300px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+ 
+    .intro h1 {
+        font-size: 45px;
+    }
+    .intro_desc {
+        font-size: 18px;
+    }
+    .main {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .intro {
+        width: 47%;
+        margin-top: 300px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+ 
+    .intro h1 {
+        font-size: 45px;
+    }
+    .intro_desc {
+        font-size: 18px;
+    }
+    .main {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .intro {
+        width: 47%;
+        margin-top: 400px;
+        margin-left: 50px;
+        top: -200px;
+        right: -50px;
+        position: relative;
+    }
+    .main_photo {
+        width: 50%;
+    }
+    .intro h1 {
+        font-size: 60px;
+    }
+    .job_title {
+        font-size: 30px;
+    }
+    .intro_desc {
+        font-size: 25px;
+    }
+    .main {
+        margin-top: 250px;
+    }
+    .intro_btn .intro_btn_yellow {
+        width: 500px;
+    }
+}
+
